@@ -10,4 +10,6 @@ RUN apt update --fix-missing &&  \
     apt-get install -y ./google-chrome-stable_current_amd64.deb && \
     rm google-chrome-stable_current_amd64.deb
 
+RUN apt-get install -y firefox firefox-geckodriver libpci-dev
+
 USER gitpod
